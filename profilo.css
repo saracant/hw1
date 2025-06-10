@@ -1,0 +1,172 @@
+
+.profilo-container {
+    max-width: 1200px; 
+    margin: 40px auto; 
+    padding: 20px;
+    background-color: #f8f8f8; 
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08);
+}
+
+.profilo-selection {
+    padding: 20px;
+}
+
+.profilo-selection h1 {
+    font-size: 2.5em;
+    color: #333;
+    margin-bottom: 15px;
+    text-align: center;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.user-info {
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 1.1em;
+    color: #666;
+}
+
+.user-info p {
+    margin: 5px 0;
+}
+
+.user-info strong {
+    color: #000;
+}
+
+hr {
+    border: none;
+    border-top: 1px solid #eee;
+    margin: 30px 0;
+}
+
+.profilo-selection h2 {
+    font-size: 1.8em;
+    color: #444;
+    margin-bottom: 25px;
+    text-align: center;
+    font-family: 'Montserrat', sans-serif;
+}
+
+
+.prenotazioni-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); 
+    gap: 25px; 
+    padding: 20px 0; 
+}
+
+
+.prenotazione-card {
+    background-color: #fff;
+    border: 1px solid #e0e0e0;
+    border-radius: 10px;
+    overflow: hidden; 
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease; 
+    display: flex; 
+    flex-direction: column; 
+    text-align: center;
+}
+
+.prenotazione-card:hover {
+    transform: translateY(-5px); 
+    box-shadow: 0 6px 16px rgba(0, 0, 0, 0.15); 
+}
+
+.prenotazione-card img {
+    width: 100%; 
+    height: 200px; 
+    object-fit: cover; 
+    border-bottom: 1px solid #eee; 
+}
+
+.prenotazione-info {
+    padding: 15px 20px; 
+    flex-grow: 1; 
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between; 
+}
+
+.prenotazione-info h3 {
+    font-size: 1.4em;
+    color: #333;
+    margin-top: 0;
+    margin-bottom: 10px;
+    font-family: 'Open Sans', sans-serif;
+    text-transform: uppercase;
+}
+
+.prenotazione-info p {
+    font-size: 0.95em;
+    color: #555;
+    line-height: 1.5;
+    margin-bottom: 8px;
+}
+
+.prenotazione-info p strong {
+    color: #222;
+}
+
+.prenotazione-info .data-prenotazione {
+    font-size: 0.85em;
+    color: #888;
+    margin-top: auto; 
+    padding-top: 10px;
+    border-top: 1px dashed #eee;
+}
+
+
+.logout-button {
+    display: block; 
+    width: fit-content;
+    margin: 30px auto; 
+    padding: 12px 30px;
+    background-color: darkred; 
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 1.1em;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.logout-button:hover {
+    background-color: #666;
+}
+
+
+@media (max-width: 768px) {
+    .profilo-container {
+        margin: 20px auto;
+        padding: 15px;
+    }
+
+    .profilo-selection h1 {
+        font-size: 2em;
+    }
+
+    .profilo-selection h2 {
+        font-size: 1.5em;
+    }
+
+    .prenotazioni-grid {
+        grid-template-columns: 1fr; 
+        gap: 20px;
+    }
+
+    .prenotazione-card img {
+        height: 180px; 
+    }
+
+    .prenotazione-info h3 {
+        font-size: 1.2em;
+    }
+
+    .logout-button {
+        width: 100%;
+        max-width: 250px; 
+    }
+}
